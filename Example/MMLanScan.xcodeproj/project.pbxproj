@@ -22,6 +22,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6424781B753D1DCD5788E28B /* Pods_MMLanScan_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D62C9BA5E66C2E496AE1A3 /* Pods_MMLanScan_Tests.framework */; };
+		82F013F11D5DB3F4005C4CEE /* DeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F013F01D5DB3F4005C4CEE /* DeviceCell.m */; };
+		82F013F31D5DB6D8005C4CEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82F013F21D5DB6D8005C4CEE /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,9 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		701F09745434FED53B2A1EF9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		78913DC99AF8956FC7961094 /* Pods-MMLanScan_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMLanScan_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMLanScan_Example/Pods-MMLanScan_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		82F013EF1D5DB3F4005C4CEE /* DeviceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceCell.h; sourceTree = "<group>"; };
+		82F013F01D5DB3F4005C4CEE /* DeviceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceCell.m; sourceTree = "<group>"; };
+		82F013F21D5DB6D8005C4CEE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		890203505A9F91B33058C47D /* Pods_MMLanScan_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMLanScan_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB4045CAB11E87F0203236F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -130,9 +135,11 @@
 		6003F593195388D20070C39A /* Example for MMLanScan */ = {
 			isa = PBXGroup;
 			children = (
+				82F013EE1D5DB3E3005C4CEE /* Cells */,
 				6003F59C195388D20070C39A /* MMAppDelegate.h */,
 				6003F59D195388D20070C39A /* MMAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				82F013F21D5DB6D8005C4CEE /* LaunchScreen.storyboard */,
 				6003F5A5195388D20070C39A /* MMViewController.h */,
 				6003F5A6195388D20070C39A /* MMViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -180,6 +187,15 @@
 				9BB4045CAB11E87F0203236F /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		82F013EE1D5DB3E3005C4CEE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				82F013EF1D5DB3F4005C4CEE /* DeviceCell.h */,
+				82F013F01D5DB3F4005C4CEE /* DeviceCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		EA37DE4393A497400031846D /* Pods */ = {
@@ -277,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				82F013F31D5DB6D8005C4CEE /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -393,6 +410,7 @@
 				6003F59E195388D20070C39A /* MMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				82F013F11D5DB3F4005C4CEE /* DeviceCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
