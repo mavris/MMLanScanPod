@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MMLanScan_Example' do
+  pod 'MMLanScan', :path => '../'
+
+  target 'MMLanScan_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
